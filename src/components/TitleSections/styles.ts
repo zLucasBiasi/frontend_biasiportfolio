@@ -5,10 +5,11 @@ export const TitleStyle = styled.h2`
     color: ${theme.colors.blueCian};
     font-size: ${theme.fonts.titleLarger};
     text-transform: uppercase;
+    margin-top: 20rem;
     margin-bottom: 6rem;
 
     @media (max-width: 600px) {
-      margin-top: 8rem;
+      margin-top: 15rem;
       margin-bottom: 4rem;
       font-size: ${theme.fonts.titleMedium};
       width: 100%;

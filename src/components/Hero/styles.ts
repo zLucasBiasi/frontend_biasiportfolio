@@ -3,11 +3,6 @@ import styled, { css } from "styled-components";
 export const ContentHero = styled.div`
   margin-top: 5rem;
   width: 100%;
-  height: 100vh;
-
-  @media (max-width: 1000px) {
-    height: 100%;
-  }
 `;
 
 export const Wrapper = styled.div`
