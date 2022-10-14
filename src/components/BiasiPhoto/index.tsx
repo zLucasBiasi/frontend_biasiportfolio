@@ -1,4 +1,4 @@
-import biasi from "../../public/assets/PhotoBiasi.png";
+import biasi from "../../public/assets/photoBiasi.png";
 
 import * as S from "./styles";
 
