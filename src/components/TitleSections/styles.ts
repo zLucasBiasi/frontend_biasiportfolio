@@ -10,7 +10,7 @@ export const TitleStyle = styled.h2`
     @media (max-width: 600px) {
       margin-top: 8rem;
       margin-bottom: 4rem;
-      font-size: ${theme.fonts.titleLarger};
+      font-size: ${theme.fonts.titleMedium};
       width: 100%;
       text-align: center;
     }
