@@ -10,6 +10,8 @@ export default createGlobalStyle`
 
     body {
       font-family: "Poppins", sans-serif;
+      background-color: ${theme.colors.background};
+      color: ${theme.colors.white};
     }
 
     ul {
@@ -27,7 +29,7 @@ export default createGlobalStyle`
 `;
 
 export const Container = styled.div`
-  max-width: 120rem;
+  max-width: 125rem;
   padding: 0 3rem;
   margin: 0 auto;
   width: 100%;
