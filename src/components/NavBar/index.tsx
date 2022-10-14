@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { Logo } from "../Logo";
-import hamb from "../../public/assets/hamburguer.svg";
+import hamb from "/public/assets/hamburguer.svg";
 
 import * as S from "./styles";
 

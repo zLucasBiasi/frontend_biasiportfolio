@@ -5,12 +5,13 @@ const theme = {
     blue: "#0075FF",
     white: "#fff",
     black: "#000",
-    gray: "#4B4A51",
+    gray: "#919496",
     grayNav: "#14121E",
   },
 
   fonts: {
     listNav: "1.6rem",
+    titleExtraLarger: "7.2rem",
     titleLarger: "4rem",
     titleMedium: "3.2rem",
     titleSmall: "2rem",

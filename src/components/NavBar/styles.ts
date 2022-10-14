@@ -5,21 +5,6 @@ import theme from "../../styles/theme";
 interface OpenNavProps {
   openNav: boolean;
 }
-const navAnimation = keyframes`
-  
-  from{
-  transform:translateX(10rem);
-  background-color:transparent;
- 
-  
-  }
-  to{   
-    transform:translateX(0);
-    background-color:${theme.colors.grayNav};
-  
-    }
-  
-  `;
 
 export const Nav = styled.nav`
   display: flex;
@@ -32,12 +17,13 @@ export const ContainerList = styled.div<OpenNavProps>`
     @media (max-width: 1000px) {
       overflow: hidden;
       width: 85%;
-      height: 50%;
-
-      display: ${openNav ? "flex" : "none"};
+      height: 30rem;
+      border-radius: 0.8rem;
+      opacity: ${openNav ? "1" : "0"};
       position: absolute;
       top: 9rem;
-      right: 3rem;
+      right: ${openNav ? "3rem" : "110rem"};
+      transition: 0.2s linear;
     }
   `}
 `;
@@ -54,7 +40,6 @@ export const ContentList = styled.ul`
         display: flex;
         justify-content: center;
         flex-direction: column;
-        animation: ${navAnimation} 0.2s linear forwards;
       }
     `}
 `;
@@ -85,7 +70,7 @@ export const ListItems = styled.li`
     }
   `}
 
-  @media (max-width:900px) {
+  @media (max-width:1000px) {
     padding: 1.5rem 0;
 
     font-size: 2rem;
