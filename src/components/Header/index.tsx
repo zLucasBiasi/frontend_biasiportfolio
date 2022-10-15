@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useState } from "react";
 
 import { Container } from "../../styles/global";
-
 import { NavBar } from "../NavBar";
 
 import * as S from "./styles";
+
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
