@@ -1,11 +1,16 @@
 import Image from "next/future/image";
 
 import styled, { css } from "styled-components";
+
+export const ContentSkills = styled.div`
+  margin: 15rem 0;
+`;
+
 export const Wrapper = styled.div`
   display: flex;
-
   align-items: center;
 `;
+
 export const WrapperCollum = styled.div`
   display: flex;
   flex-direction: column;
@@ -22,10 +27,6 @@ export const WrapperJustify = styled.div`
   @media (max-width: 600px) {
     justify-content: center;
   }
-`;
-
-export const ContentSkills = styled.div`
-  margin: 15rem 0;
 `;
 
 export const Title = styled.h2`
