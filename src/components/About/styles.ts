@@ -16,7 +16,6 @@ export const Paragraph = styled.p`
     width: 60%;
     margin-bottom: 10rem;
     @media (max-width: 1000px) {
-      font-size: ${theme.fonts.paragraphSmall};
       width: 80%;
     }
     @media (max-width: 600px) {

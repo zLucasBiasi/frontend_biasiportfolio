@@ -15,9 +15,11 @@ const theme = {
     titleLarger: "4rem",
     titleMedium: "3.2rem",
     titleSmall: "2rem",
+    titleSmallX2: "1.5rem",
     paragraphLarger: "2.4rem",
     paragraphMedium: "2.0rem",
     paragraphSmall: "1.6rem",
+    paragraphSmallX2: "1.3rem",
   },
 };
 

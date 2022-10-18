@@ -13,4 +13,8 @@ export const ImageStyle = styled(Image)`
     width: 30rem;
     height: 30rem;
   }
+  @media (max-width: 330px) {
+    width: 20rem;
+    height: 20rem;
+  }
 `;

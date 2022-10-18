@@ -73,5 +73,9 @@ export const Span = styled.span`
     @media (max-width: 1000px) {
       font-size: ${theme.fonts.titleLarger};
     }
+
+    @media (max-width: 330px) {
+      font-size: ${theme.fonts.titleMedium};
+    }
   `}
 `;
