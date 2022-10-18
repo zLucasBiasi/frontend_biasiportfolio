@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { Logo } from "../Logo";
 import hamb from "/public/assets/hamburguer.svg";
+import iconBlackAndWhite from "/public/assets/iconBlackAndWhite.png";
 
 import * as S from "./styles";
 
@@ -24,7 +25,9 @@ export const NavBar = () => {
           <S.ListItems>Habilidades</S.ListItems>
           <S.ListItems>Projetos</S.ListItems>
           <S.ListItems>Contatos</S.ListItems>
-          <S.ListItems>X</S.ListItems>
+          <S.DarkMode>
+            <S.StyleImage src={iconBlackAndWhite} alt="Icone de modo noturno" />
+          </S.DarkMode>
         </S.ContentList>
       </S.ContainerList>
     </S.Nav>

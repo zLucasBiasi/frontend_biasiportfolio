@@ -12,6 +12,20 @@ export const Nav = styled.nav`
   align-items: center;
 `;
 
+export const StyleImage = styled(Image)`
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-top: 0.5rem;
+
+  @media (max-width: 1000px) {
+    margin-left: 1.5rem;
+  }
+`;
+
+export const DarkMode = styled.li`
+  cursor: pointer;
+`;
+
 export const ContainerList = styled.div<OpenNavProps>`
   ${({ openNav, theme }) => css`
     @media (max-width: 1000px) {
@@ -46,6 +60,8 @@ export const ContentList = styled.ul`
 
 export const ListItems = styled.li`
   ${({ theme }) => css`
+    display: flex;
+    align-items: center;
     margin: 0 2rem;
     font-size: ${theme.fonts.listNav};
     font-weight: 600;
