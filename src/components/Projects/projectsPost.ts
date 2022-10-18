@@ -1,6 +1,6 @@
-import projectPorfolio from "/public/assets/PosterPortfolio.png";
-import projectTrampoDeCasa from "/public/assets/PosterTrampoDeCasa.png";
-import projectSerpens from "/public/assets/PosterSerpens.png";
+import projectPorfolio from "/public/assets/PosterPortfolio.webp";
+import projectTrampoDeCasa from "/public/assets/PosterTrampoDeCasa.webp";
+import projectSerpens from "/public/assets/PosterSerpens.webp";
 export const Project = [
   {
     name: "Trampo de casa",
