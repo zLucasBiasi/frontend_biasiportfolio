@@ -7,7 +7,7 @@ export const Contact = () => {
   return (
     <Container>
       <S.ContentContact>
-        <TitleSections title="Contato" />
+        <TitleSections title="Contatos" />
         <S.TitleContact>LUCAS BIASI DOS ANJOS</S.TitleContact>
         <S.TitleContact>GUARULHOS - SP</S.TitleContact>
         <S.TitleEmail href="mailto:lucasbiasidev@gmail.com">

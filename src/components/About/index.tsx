@@ -15,7 +15,7 @@ export const About = () => {
           limpas, modernas e acessíveis para todo tipo de usuário. Meus hobbies
           incluem jogos, música e tocar alguns instrumentos que gosto como
           saxophone e um bom e velho violão. Caso queira conversar comigo e
-          falar sobre algo do tipo estou disponivel em meu discord “ Olha o
+          falar sobre algo do tipo estou disponível em meu discord “ Olha o
           Biasi#0419 ” ou pode me chamar em meu linkedin na aba de{" "}
           <S.Span>contatos!</S.Span>
         </S.Paragraph>

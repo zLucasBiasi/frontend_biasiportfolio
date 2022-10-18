@@ -23,7 +23,7 @@ export const NavBar = () => {
           <S.ListItems>Sobre</S.ListItems>
           <S.ListItems>Habilidades</S.ListItems>
           <S.ListItems>Projetos</S.ListItems>
-          <S.ListItems>Contato</S.ListItems>
+          <S.ListItems>Contatos</S.ListItems>
           <S.ListItems>X</S.ListItems>
         </S.ContentList>
       </S.ContainerList>

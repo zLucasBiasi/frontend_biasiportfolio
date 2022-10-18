@@ -16,7 +16,7 @@ export const Skills = () => {
             </S.Title>
             <S.Paragraph>
               Procuro sempre por meio dessas tecnologias estar trazendo um
-              código legivel e escalavel com foco na performance e na baixa
+              código legível e escalável com foco na performance e na baixa
               manutenção.
             </S.Paragraph>
           </S.WrapperCollum>
