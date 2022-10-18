@@ -10,6 +10,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 `;
 
 export const ContainerList = styled.div<OpenNavProps>`

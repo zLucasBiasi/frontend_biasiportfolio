@@ -11,6 +11,8 @@ export const Header = styled.header<HeaderProps>`
     position: sticky;
     top: 0;
     left: 0;
+
+    z-index: 10;
     background: ${isScrolled
       ? "linear-gradient(180deg, #02000E 0%, rgba(2, 0, 14, 0.7) 100%);"
       : "transparen"};
