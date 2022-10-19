@@ -74,7 +74,7 @@ export const ListItems = styled.li`
       background-color: ${theme.colors.blueCian};
       display: block;
       position: absolute;
-      margin-top: 10px;
+      margin-top: 3rem;
       transition: 0.4s ease;
     }
     &:hover::after {
