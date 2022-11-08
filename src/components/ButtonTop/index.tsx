@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+
 import Image from "next/future/image";
 import arrow from "/public/assets/arrow.svg";
 

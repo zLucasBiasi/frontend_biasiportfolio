@@ -1,7 +1,7 @@
 import Image from "next/future/image";
 
-import styled, { css, keyframes } from "styled-components";
-import theme from "../../styles/theme";
+import styled, { css } from "styled-components";
+
 interface OpenNavProps {
   openNav: boolean;
 }

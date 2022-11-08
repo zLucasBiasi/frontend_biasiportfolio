@@ -1,14 +1,14 @@
-const theme = {
+const ligthTheme = {
+  title: "ligth",
   colors: {
-    background: "#02000E",
-    blueCian: "#08D1F8",
-    blue: "#0075FF",
-    white: "#fff",
+    background: "#ffffff",
+    blueCian: "#0075FF",
+    blue: "#08D1F8",
+    white: "#000",
     black: "#000",
-    gray: "#919496",
+    gray: "#000",
     grayNav: "#14121E",
   },
-
   fonts: {
     listNav: "1.6rem",
     titleExtraLarger: "7.2rem",
@@ -23,4 +23,4 @@ const theme = {
   },
 };
 
-export default theme;
+export default ligthTheme;

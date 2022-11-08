@@ -8,17 +8,27 @@ import { Hero } from "../components/Hero";
 import { Projects } from "../components/Projects";
 import { Skills } from "../components/Skills";
 
+import { ThemeProvider } from "styled-components";
+import { DarkMode } from "../context/darkMode";
+import Global from "../styles/global";
+
+import { useContext } from "react";
+
 const Home: NextPage = () => {
+  const { theme } = useContext(DarkMode);
   return (
     <>
-      <HeadDocument />
-      <Header />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <ButtonTop />
+      <ThemeProvider theme={theme}>
+        <Global />
+        <HeadDocument />
+        <Header />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+        <ButtonTop />
+      </ThemeProvider>
     </>
   );
 };

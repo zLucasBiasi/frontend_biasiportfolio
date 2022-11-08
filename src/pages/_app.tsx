@@ -1,16 +1,13 @@
 import { AppProps } from "next/app";
-
-import Global from "../styles/global";
-import theme from "../styles/theme";
-import { ThemeProvider } from "styled-components";
+import { useContext } from "react";
+import { DarkProvider } from "../context/darkMode";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <Global />
+      <DarkProvider>
         <Component {...pageProps} />
-      </ThemeProvider>
+      </DarkProvider>
     </>
   );
 }
