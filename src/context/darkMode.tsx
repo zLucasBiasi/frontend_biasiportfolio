@@ -1,9 +1,17 @@
 import { createContext, ReactNode, useState } from "react";
 
-export const DarkMode = createContext();
-
 import light from "../styles/themes/ligthTheme";
 import dark from "../styles/themes/theme";
+import { ThemeType } from "../styles/themes/themeType";
+
+interface DarkModeContextType {
+  toggleTheme: () => void;
+  theme: ThemeType;
+}
+
+export const DarkModeContext = createContext<DarkModeContextType>(
+  {} as DarkModeContextType
+);
 
 export const DarkProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState(dark);
@@ -13,11 +21,12 @@ export const DarkProvider = ({ children }: { children: ReactNode }) => {
   };
 
   console.log(theme);
+
   return (
     <>
-      <DarkMode.Provider value={{ toggleTheme, theme }}>
+      <DarkModeContext.Provider value={{ toggleTheme, theme }}>
         {children}
-      </DarkMode.Provider>
+      </DarkModeContext.Provider>
     </>
   );
 };

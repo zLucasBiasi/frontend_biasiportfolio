@@ -1,4 +1,6 @@
-const ligthTheme = {
+import { ThemeType } from "./themeType";
+
+const ligthTheme: ThemeType = {
   title: "ligth",
   colors: {
     background: "#ffffff",

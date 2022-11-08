@@ -6,11 +6,11 @@ import sun from "/public/assets/light.svg";
 import moon from "/public/assets/dark.svg";
 
 import * as S from "./styles";
-import { DarkMode } from "../../context/darkMode";
+import { DarkModeContext } from "../../context/darkMode";
 import { LogoDark } from "../LogoDark";
 
 export const NavBar = () => {
-  const { toggleTheme } = useContext(DarkMode);
+  const { toggleTheme } = useContext(DarkModeContext);
 
   const [openNav, setOpenNav] = useState(false);
 

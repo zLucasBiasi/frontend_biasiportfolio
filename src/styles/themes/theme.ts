@@ -1,4 +1,6 @@
-const theme = {
+import { ThemeType } from "./themeType";
+
+const theme: ThemeType = {
   title: "dark",
   colors: {
     background: "#02000E",
