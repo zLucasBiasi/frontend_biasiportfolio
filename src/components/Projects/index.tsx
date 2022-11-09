@@ -12,11 +12,11 @@ export const Projects = () => {
         <TitleSections title="Projetos" />
 
         {Project?.map((item) => (
-          <S.Teste key={item.name}>
+          <S.ContainerImage key={item.name}>
             <a href={item.link} target="_blank" rel="noreferrer">
               <S.ImageStyle src={item.poster} alt={item.name} priority />
             </a>
-          </S.Teste>
+          </S.ContainerImage>
         ))}
 
         <S.ContainerGitHub>

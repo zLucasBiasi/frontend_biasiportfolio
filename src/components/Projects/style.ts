@@ -27,7 +27,7 @@ export const ImageStyle = styled(Image)`
   }
 `;
 
-export const Teste = styled.div`
+export const ContainerImage = styled.div`
   display: flex;
 
   justify-content: flex-start;
