@@ -20,8 +20,6 @@ export const DarkProvider = ({ children }: { children: ReactNode }) => {
     setTheme(theme.title === "dark" ? light : dark);
   };
 
-  console.log(theme);
-
   return (
     <>
       <DarkModeContext.Provider value={{ toggleTheme, theme }}>
