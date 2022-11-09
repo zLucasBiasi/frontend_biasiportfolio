@@ -13,31 +13,11 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   <url>
       <loc>https://ploow.store/</loc>
-      <lastmod><?php echo $hoje; ?></lastmod>
+      <lastmod>2021-01-01</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
   </url>
   
-  <url>
-      <loc>https://ploow.store/login</loc>
-      <lastmod><?php echo $hoje; ?></lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-  </url>
-  
-  <url>
-      <loc>https://ploow.store/register</loc>
-      <lastmod><?php echo $hoje; ?></lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-  </url>
-  
-  <url>
-      <loc>https://ploow.store/tos</loc>
-      <lastmod><?php echo $hoje; ?></lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-  </url>
 </urlset>`;
 
   res.end(xml);
