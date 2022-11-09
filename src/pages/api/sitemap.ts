@@ -9,13 +9,36 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   res.setHeader("Cache-control", "stale-while-revalidate, s-maxage=3600");
 
   // generate sitemap here
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
-    <url>
-      <loc>https://biasiportfolio.vercel.app/</loc>
-      <lastmod>2021-01-01</lastmod>
-    </url>
-    </urlset>`;
+  const xml = `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+      <loc>https://ploow.store/</loc>
+      <lastmod><?php echo $hoje; ?></lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+  </url>
+  
+  <url>
+      <loc>https://ploow.store/login</loc>
+      <lastmod><?php echo $hoje; ?></lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+  </url>
+  
+  <url>
+      <loc>https://ploow.store/register</loc>
+      <lastmod><?php echo $hoje; ?></lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+  </url>
+  
+  <url>
+      <loc>https://ploow.store/tos</loc>
+      <lastmod><?php echo $hoje; ?></lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+  </url>
+</urlset>`;
 
   res.end(xml);
 }
