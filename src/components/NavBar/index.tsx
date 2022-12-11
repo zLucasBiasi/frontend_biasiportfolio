@@ -19,7 +19,16 @@ export const NavBar = () => {
 
     return (
         <S.Nav>
-            {mode ? <Logo /> : <LogoDark />}
+            <Link
+                to="hero"
+                offset={-250}
+                spy={false}
+                smooth="easeInOutQuart"
+                duration={1000}
+                style={{ cursor: "pointer" }}
+            >
+                {mode ? <Logo /> : <LogoDark />}
+            </Link>
 
             <S.ImageHamb
                 onClick={() => setOpenNav(!openNav)}

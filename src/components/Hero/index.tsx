@@ -6,7 +6,7 @@ import * as S from "./styles";
 export const Hero = () => {
     return (
         <Container>
-            <S.ContentHero>
+            <S.ContentHero id="hero">
                 <S.Wrapper>
                     <div>
                         <S.Title>
