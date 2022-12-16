@@ -18,6 +18,19 @@ export const Contact = () => {
                         +55 11 95926-5463
                     </S.Call>
                 </S.TitleContact>
+                <S.TitleContact>
+                    <S.Call
+                        href="https://www.linkedin.com/in/lucasbiasidev/"
+                        target={"_blank"}
+                        rel="noreferrer"
+                    >
+                        Meu Linkedin
+                    </S.Call>
+                </S.TitleContact>
+
+                <S.Copyrigth>
+                    © 2022 Todos direitos reservados a Lucas Biasi
+                </S.Copyrigth>
             </S.ContentContact>
         </Container>
     );

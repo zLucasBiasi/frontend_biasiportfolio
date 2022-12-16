@@ -28,7 +28,7 @@ export const Projects = () => {
                         href="https://github.com/zLucasBiasi"
                         target="_blank"
                     >
-                        VEJA MAIS<span>{" >"}</span>
+                        Veja mais no meu github<span>{" >"}</span>
                     </S.LinkSeeMore>
                 </S.ContainerGitHub>
             </S.ContentProjects>

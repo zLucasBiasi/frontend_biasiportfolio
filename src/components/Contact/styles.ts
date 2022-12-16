@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 
 export const ContentContact = styled.div`
     margin: 15rem 0;
+    position: relative;
 `;
 
 export const TitleContact = styled.h2`
@@ -48,4 +49,19 @@ export const Call = styled.a`
         css`
             color: ${theme.colors.gray};
         `}
+`;
+
+export const Copyrigth = styled.span`
+    ${({ theme }) => css`
+        position: absolute;
+        left: 0;
+        bottom: -110px;
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 3rem;
+        color: ${theme.colors.gray};
+        @media (max-width: 600px) {
+            text-align: center;
+        }
+    `}
 `;

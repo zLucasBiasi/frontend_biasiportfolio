@@ -1,7 +1,7 @@
 import { Container } from "../../styles/global";
 
 import { TitleSections } from "../TitleSections";
-
+import { Link } from "react-scroll";
 import * as S from "./styles";
 
 export const About = () => {
@@ -18,7 +18,17 @@ export const About = () => {
                     saxophone e um bom e velho violão. Caso queira conversar
                     comigo e falar sobre algo do tipo estou disponível em meu
                     discord “ Olha o Biasi#0419 ” ou pode me chamar em meu
-                    linkedin na aba de <S.Span>contatos!</S.Span>
+                    linkedin na aba de{" "}
+                    <S.Span>
+                        <Link
+                            to="contact"
+                            spy={false}
+                            smooth="easeInOutQuart"
+                            duration={1000}
+                        >
+                            Contatos!
+                        </Link>
+                    </S.Span>
                 </S.Paragraph>
             </S.ContentAbout>
         </Container>
