@@ -63,5 +63,15 @@ export const Copyrigth = styled.span`
         @media (max-width: 600px) {
             text-align: center;
         }
+        @media (max-width: 400px) {
+            font-size: 1rem;
+        }
+        @media (max-width: 350px) {
+            bottom: -100px;
+            font-size: 0.8rem;
+        }
+        @media (max-width: 340px) {
+            bottom: -70px;
+        }
     `}
 `;

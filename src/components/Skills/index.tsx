@@ -1,9 +1,14 @@
+import { useContext } from "react";
+
+import { DarkModeContext } from "../../context/darkMode";
 import { Container } from "../../styles/global";
 import { TitleSections } from "../TitleSections";
 import { hardSkills } from "./hardSkills";
+
 import * as S from "./styles";
 
 export const Skills = () => {
+    const { theme } = useContext(DarkModeContext);
     return (
         <Container>
             <S.ContentSkills id="skills">
@@ -21,13 +26,15 @@ export const Skills = () => {
                     </S.WrapperCollum>
 
                     <div>
-                        {hardSkills?.map((item, index) => (
-                            <S.ImageStyle
-                                key={index}
-                                src={item.icon}
-                                alt={item.alt}
-                            />
-                        ))}
+                        {hardSkills[theme.title].map(
+                            (item: any, index: any) => (
+                                <S.ImageStyle
+                                    key={index}
+                                    src={item.icon}
+                                    alt={item.alt}
+                                />
+                            )
+                        )}
                     </div>
                 </S.WrapperJustify>
             </S.ContentSkills>

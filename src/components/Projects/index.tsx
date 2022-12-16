@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Container } from "../../styles/global";
 import { TitleSections } from "../TitleSections";
 import { Project } from "./projectsPost";

@@ -11,11 +11,9 @@ import { LogoDark } from "../LogoDark";
 import * as S from "./styles";
 
 export const NavBar = () => {
-    const { toggleTheme } = useContext(DarkModeContext);
+    const { toggleTheme, theme } = useContext(DarkModeContext);
 
     const [openNav, setOpenNav] = useState(false);
-
-    const [mode, setMode] = useState(true);
 
     return (
         <S.Nav>
@@ -27,17 +25,18 @@ export const NavBar = () => {
                 duration={1000}
                 style={{ cursor: "pointer" }}
             >
-                {mode ? <Logo /> : <LogoDark />}
+                {theme.title === "dark" ? <Logo /> : <LogoDark />}
             </Link>
 
             <S.ImageHamb
+                themehamb={`${theme.title === "dark"}`}
                 onClick={() => setOpenNav(!openNav)}
                 src={hamb}
                 alt="icone que representa o menu mobile"
             />
 
             <S.ContainerList openNav={openNav}>
-                <S.ContentList>
+                <S.ContentList themeMenu={theme.title === "dark"}>
                     <S.ListItems>
                         <Link
                             to="about"
@@ -81,10 +80,9 @@ export const NavBar = () => {
                     <S.DarkMode>
                         <S.StyleImage
                             onClick={() => {
-                                setMode((prev) => !prev);
                                 toggleTheme();
                             }}
-                            src={mode ? sun : moon}
+                            src={theme.title === "dark" ? sun : moon}
                             alt="Icone de modo noturno"
                         />
                     </S.DarkMode>

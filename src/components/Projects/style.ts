@@ -9,24 +9,26 @@ export const ContentProjects = styled.div`
 `;
 
 export const ImageStyle = styled(Image)`
-    width: 80rem;
-    height: 20rem;
-    object-fit: cover;
-    border-radius: 1rem;
-    box-shadow: 1px 1px 6px 1px white;
-    margin-bottom: 2rem;
-    transition: 0.3s ease;
-    @media (max-width: 1100px) {
+    ${({ theme }) => css`
         width: 80rem;
-    }
-    @media (max-width: 900px) {
-        width: 100%;
-    }
+        height: 20rem;
+        object-fit: cover;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        transition: 0.3s ease;
+        box-shadow: ${theme.colors.border};
+        @media (max-width: 1100px) {
+            width: 80rem;
+        }
+        @media (max-width: 900px) {
+            width: 100%;
+        }
 
-    &:hover {
-        z-index: -1;
-        transform: translateX(1rem);
-    }
+        &:hover {
+            z-index: -1;
+            transform: translateX(1rem);
+        }
+    `}
 `;
 
 export const ContainerImage = styled.div`
