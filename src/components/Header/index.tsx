@@ -1,5 +1,3 @@
-import { useCallback, useEffect, useState } from "react";
-
 import { Container } from "../../styles/global";
 import { NavBar } from "../NavBar";
 import { useOnScroll } from "./hooks";
