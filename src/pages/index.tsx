@@ -9,28 +9,20 @@ import { Header } from "../components/Header";
 import { Hero } from "../components/Hero";
 import { Projects } from "../components/Projects";
 import { Skills } from "../components/Skills";
-import { ThemeProvider } from "styled-components";
-import { DarkModeContext } from "../context/darkMode";
-
-import Global from "../styles/global";
 
 const Home: NextPage = () => {
-  const { theme } = useContext(DarkModeContext);
-  return (
-    <>
-      <ThemeProvider theme={theme}>
-        <Global />
-        <HeadDocument />
-        <Header />
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-        <ButtonTop />
-      </ThemeProvider>
-    </>
-  );
+    return (
+        <>
+            <HeadDocument />
+            <Header />
+            <Hero />
+            <About />
+            <Skills />
+            <Projects />
+            <Contact />
+            <ButtonTop />
+        </>
+    );
 };
 
 export default Home;
