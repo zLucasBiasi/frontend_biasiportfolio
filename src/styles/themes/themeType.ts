@@ -10,6 +10,7 @@ export interface ThemeType {
         grayNav: string;
         backgroundLinear: string;
         border?: string;
+        grayInput?: string;
     };
     fonts: {
         listNav: string;

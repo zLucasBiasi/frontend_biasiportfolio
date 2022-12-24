@@ -4,10 +4,13 @@ interface ButtonProps {
     disabled?: boolean;
     children?: React.ReactNode;
 }
+
+import * as S from "./styles";
+
 export const Button = ({ children, type }: ButtonProps) => {
     return (
         <>
-            <button type={type}>{children}</button>
+            <S.Button type={type}>{children}</S.Button>
         </>
     );
 };

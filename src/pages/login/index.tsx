@@ -1,31 +1,62 @@
 import { useState } from "react";
+import { z } from "zod";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+import onEye from "/public/assets/onEye.svg";
+import offEye from "/public/assets/offEye.svg";
+
 import { Button } from "../../utils/Button";
 import { Form } from "../../utils/Form";
 import { Input } from "../../utils/Input";
 
+import * as S from "./styles";
+
+const schema = z.object({
+    email: z.string().email(),
+    password: z.string(),
+});
+
 const Login = () => {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    const [seePassword, setSeePassword] = useState(false);
+    const { register, handleSubmit, formState } = useForm({
+        resolver: zodResolver(schema),
+    });
+
+    const onSubmit = (data: any) => {
+        console.log(data);
+    };
+
     return (
         <>
-            <Form>
-                <Input
-                    id="email"
-                    label="Email"
-                    type="text"
-                    value={email}
-                    setValue={({ target }) => setEmail(target.value)}
-                />
+            <S.Wrapper>
+                <S.CardLogin>
+                    <Form handleSubmit={handleSubmit(onSubmit)}>
+                        <Input
+                            {...register("email")}
+                            id="email"
+                            label="EMAIL"
+                            type="text"
+                            placeholder="Digite seu email"
+                        />
 
-                <Input
-                    id="Password"
-                    label="Password"
-                    type="password"
-                    value={password}
-                    setValue={({ target }) => setPassword(target.value)}
-                />
-                <Button type="submit">Login</Button>
-            </Form>
+                        <Input
+                            {...register("password")}
+                            id="Password"
+                            label="SENHA"
+                            type={!seePassword ? "password" : "text"}
+                            placeholder="Digite sua senha"
+                        />
+
+                        <S.StyleImage
+                            onClick={() => setSeePassword((prev) => !prev)}
+                            src={seePassword ? onEye : offEye}
+                            alt="Icone de modo noturno"
+                        />
+                        <Button type="submit">Login</Button>
+                    </Form>
+                </S.CardLogin>
+            </S.Wrapper>
         </>
     );
 };

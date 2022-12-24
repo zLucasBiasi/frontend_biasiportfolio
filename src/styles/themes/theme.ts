@@ -12,6 +12,7 @@ const theme: ThemeType = {
         grayNav: "#14121E",
         backgroundLinear:
             "linear-gradient(180deg, #02000E 0%, rgba(2, 0, 14, 0.7) 100%)",
+        grayInput: "#cecece",
     },
     fonts: {
         listNav: "1.6rem",

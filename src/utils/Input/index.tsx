@@ -1,30 +1,19 @@
-import { ChangeEventHandler } from "react";
+import { forwardRef, InputHTMLAttributes, memo, RefObject } from "react";
 
-interface InputProps {
-    id: string;
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     label: string;
-    type: string;
-    value: string;
-    setValue: ChangeEventHandler<HTMLInputElement>;
 }
-export const Input = ({
-    type,
-    id,
-    label,
-    value,
-    setValue,
-    ...props
-}: InputProps) => {
-    return (
-        <>
-            <label htmlFor={id}>{label}</label>
-            <input
-                type={type}
-                id={id}
-                value={value}
-                onChange={setValue}
-                {...props}
-            />
-        </>
-    );
-};
+
+import * as S from "./styles";
+
+export const Input = memo(
+    forwardRef<HTMLInputElement, InputProps>((props, ref) => {
+        const { type, id, label, ...rest } = props;
+        return (
+            <S.ContainerInput>
+                <S.Label htmlFor={id}>{label}</S.Label>
+                <S.Input type={type} id={id} {...rest} ref={ref} />
+            </S.ContainerInput>
+        );
+    })
+);
