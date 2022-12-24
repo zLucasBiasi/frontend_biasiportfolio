@@ -14,7 +14,11 @@ export const Contact = () => {
                     lucasbiasidev@gmail.com
                 </S.TitleEmail>
                 <S.TitleContact>
-                    <S.Call href="callto:+5511959265463">
+                    <S.Call
+                        href="https://contate.me/biasideveloper"
+                        target={"_blank"}
+                        rel="noreferrer"
+                    >
                         +55 11 95926-5463
                     </S.Call>
                 </S.TitleContact>
