@@ -27,7 +27,7 @@ export const CardLogin = styled.div`
 `;
 export const StyleImage = styled(Image)`
     position: absolute;
-    right: 3rem;
+    right: 3.8rem;
     top: 16.7rem;
     width: 2rem;
     height: 2rem;
