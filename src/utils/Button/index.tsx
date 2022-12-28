@@ -3,14 +3,17 @@ interface ButtonProps {
     onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
     disabled?: boolean;
     children?: React.ReactNode;
+    Locals?: "Button_Edit";
 }
 
 import * as S from "./styles";
 
-export const Button = ({ children, type }: ButtonProps) => {
+export const Button = ({ children, type, Locals }: ButtonProps) => {
     return (
         <>
-            <S.Button type={type}>{children}</S.Button>
+            <S.Button Locals={Locals} type={type}>
+                {children}
+            </S.Button>
         </>
     );
 };

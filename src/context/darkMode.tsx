@@ -22,10 +22,8 @@ export const DarkProvider = ({ children }: { children: ReactNode }) => {
     };
 
     return (
-        <>
-            <DarkModeContext.Provider value={{ toggleTheme, theme }}>
-                <ThemeProvider theme={theme}>{children}</ThemeProvider>
-            </DarkModeContext.Provider>
-        </>
+        <DarkModeContext.Provider value={{ toggleTheme, theme }}>
+            <ThemeProvider theme={theme}>{children}</ThemeProvider>
+        </DarkModeContext.Provider>
     );
 };

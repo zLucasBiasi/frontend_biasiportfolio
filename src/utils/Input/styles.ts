@@ -1,15 +1,26 @@
-import styled, { css } from "styled-components";
+import styled, { css, DefaultTheme } from "styled-components";
+
+interface LocalsTypes {
+    Locals?: "Edit_profile";
+}
+
+const Local = {
+    Edit_profile: (theme: DefaultTheme) => css`
+        color: ${theme.colors.white};
+    `,
+};
 
 export const ContainerInput = styled.div`
     margin-top: 2.4rem;
 `;
 
-export const Label = styled.label`
-    ${({ theme }) => css`
+export const Label = styled.label<LocalsTypes>`
+    ${({ theme, Locals }) => css`
         font-weight: 700;
         font-size: 1.6rem;
         line-height: 2.4rem;
         color: ${theme.colors.background};
+        ${Locals && Local[Locals](theme)}
     `}
 `;
 
