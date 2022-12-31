@@ -2,11 +2,11 @@ import { useContext, useState } from "react";
 import { Link } from "react-scroll";
 
 import { Logo } from "../Logo";
+import { LogoDark } from "../LogoDark";
 import hamb from "/public/assets/hamburguer.svg";
 import sun from "/public/assets/light.svg";
 import moon from "/public/assets/dark.svg";
 import { DarkModeContext } from "../../context/darkMode";
-import { LogoDark } from "../LogoDark";
 
 import * as S from "./styles";
 

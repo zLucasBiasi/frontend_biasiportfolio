@@ -1,7 +1,8 @@
-import { Container } from "../../styles/global";
-
-import { TitleSections } from "../TitleSections";
 import { Link } from "react-scroll";
+
+import { Container } from "../../styles/global";
+import { TitleSections } from "../TitleSections";
+
 import * as S from "./styles";
 
 export const About = () => {

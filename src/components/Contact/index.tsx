@@ -33,7 +33,7 @@ export const Contact = () => {
                 </S.TitleContact>
 
                 <S.Copyrigth>
-                    © 2022 Todos direitos reservados a Lucas Biasi
+                    &copy; 2022 Todos direitos reservados a Lucas Biasi
                 </S.Copyrigth>
             </S.ContentContact>
         </Container>
