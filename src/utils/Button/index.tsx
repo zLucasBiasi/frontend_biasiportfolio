@@ -3,7 +3,7 @@ interface ButtonProps {
     onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
     disabled?: boolean;
     children?: React.ReactNode;
-    Locals?: "Button_Edit";
+    Locals?: "Button_Edit" | "Button_Dashboard";
 }
 
 import * as S from "./styles";

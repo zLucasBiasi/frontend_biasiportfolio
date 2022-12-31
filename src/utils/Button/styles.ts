@@ -1,6 +1,6 @@
 import styled, { css, DefaultTheme } from "styled-components";
 interface ButtonProps {
-    Locals?: "Button_Edit";
+    Locals?: "Button_Edit" | "Button_Dashboard";
 }
 
 const Local = {
@@ -10,6 +10,14 @@ const Local = {
         height: 4rem;
         font-size: 1.5rem;
         margin-top: 2rem;
+    `,
+
+    Button_Dashboard: (theme: DefaultTheme) => css`
+        background-color: ${theme.colors.blueCian};
+        width: 15rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        margin: 0;
     `,
 };
 

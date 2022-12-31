@@ -16,20 +16,14 @@ export function Sidebar() {
             <S.Logo src={Logo} alt="Logo" priority={true} />
             <S.List>
                 {items?.map((item, index) => (
-                    <>
-                        {console.log(item.link, router.asPath)}
-                        <S.Item
-                            key={index}
-                            selected={router.asPath == item.link}
-                        >
-                            <Link href={item.link}>
-                                <S.Span>
-                                    <S.Icon src={Star} alt="Icone de estrela" />
-                                    {item.name}
-                                </S.Span>
-                            </Link>
-                        </S.Item>
-                    </>
+                    <S.Item key={index} selected={router.asPath == item.link}>
+                        <Link href={item.link}>
+                            <S.Span>
+                                <S.Icon src={Star} alt="Icone de estrela" />
+                                {item.name}
+                            </S.Span>
+                        </Link>
+                    </S.Item>
                 ))}
             </S.List>
         </S.Sidebar>

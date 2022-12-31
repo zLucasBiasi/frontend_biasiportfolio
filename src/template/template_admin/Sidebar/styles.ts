@@ -19,11 +19,10 @@ export const Sidebar = styled.aside`
         min-height: 100vh;
         display: flex;
         align-items: center;
-        position: sticky;
+        position: fixed;
         top: 0;
-        right: 0;
+        left: 0;
         flex-direction: column;
-        /* background-color: ${theme.colors.blue}; */
     `}
 `;
 

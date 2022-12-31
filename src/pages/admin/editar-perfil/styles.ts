@@ -4,8 +4,9 @@ import styled, { css } from "styled-components";
 
 export const Title = styled.h1`
     font-weight: 500;
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     line-height: 4.8rem;
+    text-transform: uppercase;
 `;
 
 export const Relative = styled.div`

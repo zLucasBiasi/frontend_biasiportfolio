@@ -3,13 +3,17 @@ import Image from "next/future/image";
 import styled, { css } from "styled-components";
 
 interface ButtonProps {
-    Locals?: "Photo_Edit";
+    Locals?: "Photo_Edit" | "Admin";
 }
 
 const Local = {
     Photo_Edit: () => css`
         width: 20rem;
         height: 20rem;
+    `,
+    Admin: () => css`
+        width: 5rem;
+        height: 5rem;
     `,
 };
 

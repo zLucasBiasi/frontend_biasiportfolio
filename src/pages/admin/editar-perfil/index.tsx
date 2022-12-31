@@ -1,5 +1,6 @@
 import onEye from "/public/assets/onEye.svg";
 import offEye from "/public/assets/offEye.svg";
+import { BiasiPhoto } from "../../../components/BiasiPhoto";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -10,7 +11,6 @@ import { useState } from "react";
 import { Button } from "../../../utils/Button";
 
 import * as S from "./styles";
-import { BiasiPhoto } from "../../../components/BiasiPhoto";
 
 const schema = z.object({
     email: z.string().email(),

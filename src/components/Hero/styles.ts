@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const ContentHero = styled.div`
-    margin-top: 5rem;
+    margin-top: 7rem;
     width: 100%;
 `;
 
