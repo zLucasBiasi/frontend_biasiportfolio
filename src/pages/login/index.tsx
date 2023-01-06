@@ -6,9 +6,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import onEye from "/public/assets/onEye.svg";
 import offEye from "/public/assets/offEye.svg";
 
-import { Button } from "../../utils/Button";
-import { Form } from "../../utils/Form";
-import { Input } from "../../utils/Input";
+import { Button } from "../../components/Button";
+import { Form } from "../../components/Form";
+import { Input } from "../../components/Input";
 
 import * as S from "./styles";
 

@@ -5,8 +5,8 @@ import { BiasiPhoto } from "../../components/BiasiPhoto";
 
 import { CardAdmin } from "../../components/CardAdmin";
 import { TemplateAdmin } from "../../template/template_admin";
-import { Button } from "../../utils/Button/styles";
-import { Input } from "../../utils/Input";
+import { Button } from "../../components/Button/styles";
+import { Input } from "../../components/Input";
 
 import * as S from "./styles";
 const Admin = () => {

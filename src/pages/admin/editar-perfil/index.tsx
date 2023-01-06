@@ -5,10 +5,10 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { TemplateAdmin } from "../../../template/template_admin";
-import { Form } from "../../../utils/Form";
-import { Input } from "../../../utils/Input";
+import { Form } from "../../../components/Form";
+import { Input } from "../../../components/Input";
 import { useState } from "react";
-import { Button } from "../../../utils/Button";
+import { Button } from "../../../components/Button";
 
 import * as S from "./styles";
 
