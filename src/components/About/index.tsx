@@ -18,8 +18,15 @@ export const About = () => {
                     jogos, música e tocar alguns instrumentos que gosto como
                     saxophone e um bom e velho violão. Caso queira conversar
                     comigo e falar sobre algo do tipo estou disponível em meu
-                    discord “ Olha o Biasi#0419 ” ou pode me chamar em meu
-                    linkedin na aba de{" "}
+                    discord “
+                    <S.linkToDiscord
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://discordapp.com/users/343822945912619008"
+                    >
+                        Olha o Biasi#0419
+                    </S.linkToDiscord>
+                    ” ou pode me chamar em meu linkedin na aba de{" "}
                     <S.Span>
                         <Link
                             to="contact"

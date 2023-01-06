@@ -25,6 +25,14 @@ export const Paragraph = styled.p`
     `}
 `;
 
+export const linkToDiscord = styled.a`
+    ${({ theme }) => css`
+        font-weight: bold;
+
+        color: ${theme.colors.blueCian};
+    `}
+`;
+
 export const Span = styled.span`
     font-weight: bold;
 
