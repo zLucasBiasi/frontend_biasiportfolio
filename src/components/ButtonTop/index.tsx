@@ -1,9 +1,9 @@
 import Image from "next/future/image";
 import arrow from "/public/assets/arrow.svg";
 import { scrollTop } from "./functions/scrollTop";
+import { useScroll } from "./hooks/useScroll";
 
 import * as S from "./styles";
-import { useScroll } from "./hooks/useScroll";
 
 export function ButtonTop() {
     const buttonScrollToTop = useScroll();

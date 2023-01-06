@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+
 import javaScript from "/public/assets/javaScript.png";
 import reactJS from "/public/assets/reactJS.png";
 import nextJS from "/public/assets/whiteNextJS.png";
