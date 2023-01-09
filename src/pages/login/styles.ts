@@ -33,3 +33,9 @@ export const StyleImage = styled(Image)`
     height: 2rem;
     margin-top: 1rem;
 `;
+
+export const Error = styled.span`
+    ${({ theme }) => css`
+        color: ${theme.colors.black};
+    `}
+`;

@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { z } from "zod";
-import { useForm } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import onEye from "/public/assets/onEye.svg";
@@ -10,7 +10,15 @@ import { Button } from "../../components/Button";
 import { Form } from "../../components/Form";
 import { Input } from "../../components/Input";
 
+import { AuthLoginContext } from "../../context/login";
+
 import * as S from "./styles";
+
+export type FieldValues = Record<string, any>;
+interface SubmitLoginProps {
+    email: string;
+    password: string;
+}
 
 const schema = z.object({
     email: z.string().email(),
@@ -19,12 +27,14 @@ const schema = z.object({
 
 const Login = () => {
     const [seePassword, setSeePassword] = useState(false);
-    const { register, handleSubmit, formState } = useForm({
+    const { register, handleSubmit } = useForm<SubmitLoginProps>({
         resolver: zodResolver(schema),
     });
 
-    const onSubmit = (data: any) => {
-        console.log(data);
+    const { authLogin, error } = useContext(AuthLoginContext);
+
+    const onSubmit: SubmitHandler<SubmitLoginProps> = ({ email, password }) => {
+        authLogin({ email, password });
     };
 
     return (
@@ -53,6 +63,7 @@ const Login = () => {
                             src={seePassword ? onEye : offEye}
                             alt="Icone de modo noturno"
                         />
+                        <S.Error>{error}</S.Error>
                         <Button type="submit">Login</Button>
                     </Form>
                 </S.CardLogin>
