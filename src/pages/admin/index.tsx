@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import Image from "next/future/image";
 
 import iconEdit from "/public/assets/editIcon.png";
@@ -8,15 +9,19 @@ import { TemplateAdmin } from "../../template/template_admin";
 import { Button } from "../../components/Button/styles";
 import { Input } from "../../components/Input";
 
+import { AuthLoginContext } from "../../context/login";
+
 import * as S from "./styles";
 const Admin = () => {
+    const { dataUser } = useContext(AuthLoginContext);
+
     return (
         <>
             <TemplateAdmin>
                 <S.WrapperContainer>
                     <S.ProfileIconWrapper>
                         <BiasiPhoto Locals="Admin" />
-                        <S.ProfileName>Lucas Biasi</S.ProfileName>
+                        <S.ProfileName>{dataUser?.user.name}</S.ProfileName>
                     </S.ProfileIconWrapper>
                     <S.TitleInputWrapper>
                         <S.Title>PROJETOS</S.Title>

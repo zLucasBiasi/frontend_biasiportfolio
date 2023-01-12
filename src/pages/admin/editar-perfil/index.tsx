@@ -7,10 +7,11 @@ import { useForm } from "react-hook-form";
 import { TemplateAdmin } from "../../../template/template_admin";
 import { Form } from "../../../components/Form";
 import { Input } from "../../../components/Input";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Button } from "../../../components/Button";
 
 import * as S from "./styles";
+import { AuthLoginContext } from "../../../context/login";
 
 const schema = z.object({
     email: z.string().email(),
@@ -26,6 +27,8 @@ const EditProfile = () => {
     const onSubmit = (data: any) => {
         console.log(data);
     };
+
+    const { dataUser } = useContext(AuthLoginContext);
     return (
         <>
             <TemplateAdmin>
@@ -38,7 +41,7 @@ const EditProfile = () => {
                             id="email"
                             label="EMAIL"
                             type="text"
-                            placeholder="Digite seu email"
+                            placeholder={dataUser?.user.email}
                         />
 
                         <Input
