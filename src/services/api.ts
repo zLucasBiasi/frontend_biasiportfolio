@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const getApiData = axios.create({
-    baseURL: "http://localhost:5000",
+    baseURL: "https://backend-portfolio-m89s.onrender.com/",
 });
