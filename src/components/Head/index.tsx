@@ -14,6 +14,11 @@ export function HeadDocument() {
         name="description"
         content="Me chamo Lucas Biasi e este é meu portfolio"
       />
+
+      <meta
+        property="og:image"
+        content="https://biasiportfolio.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FphotoBiasi.a825e5f8.png&w=640&q=75"
+      />
       <meta name="robots" content="index, follow" />
 
       <meta name="author" content="Lucas Biasi" />
