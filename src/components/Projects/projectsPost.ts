@@ -11,7 +11,7 @@ export const Project = [
     {
         name: "Biblioteca Navalha Dourada",
         poster: projectNavalha,
-        link: "https://www.serpens.com.br/",
+        link: "https://cutez.vercel.app/navalha-dourada",
     },
     {
         name: "Serpens Site",
